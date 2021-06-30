@@ -83,7 +83,7 @@ func main() {
 		fmt.Println(checkInput(argument))
 
 	} else {
-		fmt.Println("um, try again ?")
+		fmt.Println(getHost(argument))
 	}
 
 }
