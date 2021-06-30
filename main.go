@@ -29,10 +29,10 @@ func checkInput(checkstr string) string {
 	addr := net.ParseIP(checkstr)
 	if addr != nil {
 		result, _ := net.LookupAddr(checkstr)
-		return fmt.Sprintf("%s", result)
+		return fmt.Sprintf("%s\n", result)
 	} else {
 		result, _ := net.LookupIP(checkstr)
-		return fmt.Sprintf("%s", result)
+		return fmt.Sprintf("%s\n", result)
 	}
 }
 
